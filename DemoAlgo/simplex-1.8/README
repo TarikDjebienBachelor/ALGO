@@ -1,0 +1,62 @@
+This software is a free software. See COPYING.
+It was written by François Boulier in February 2006 (boulier@lifl.fr).
+The design and the implementation could certainly be improved.
+ 
+It provides a teaching version of the Dantzig algorithm.
+
+The already compiled version
+----------------------------
+
+If your machine is a recent PC under Linux, you may try the executable 
+file "simplex" which is an already compiled version.
+
+If your machine is a PC under WINDOWS, you may try the executable
+"simplex.exe" which is an already compiled version, too.
+
+Recompiling it from scratch
+---------------------------
+
+It requires 
+- the BLAD libraries (1.6 or +) (URL http://www.lifl.fr/~boulier/BLAD) and
+- the GMP library (4.1 or +) (URL http://swox.com/gmp).
+
+To recompile it, you probably need to update the makefile.
+
+If you are using a PC under Linux, GMP is probably already installed
+but you probably need to install BLAD. I suggest you download the BLAD
+library, and that you configure it using "--prefix=$HOME/biblad32" so
+that BLAD gets installed in that library.
+
+To build "simplex", enter
+
+make
+
+Using the software
+------------------
+
+After building
+
+./simplex boulanger
+
+Linear programs under canonical form may be solved through their dual 
+programs. To do this, try
+
+./simplex -dual boulanger
+
+Looking at the examples you should figure out how to write your own 
+linear programs.
+
+About the algorithm
+-------------------
+
+General linear programs are solved using the two phases methods.
+
+The dual construction is only implemented for canonical linear programs.
+
+The implemented strategy is a non guaranteed one. 
+
+The linear program "non_terminating" enters an infinite loop.
+
+The linear program "exponential" is a special case of a generic
+linear program which leads the algorithm to 2**n loops where n
+denotes the number of constraints.

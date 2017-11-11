@@ -1,0 +1,25 @@
+#! /bin/sh
+
+# Essaie de calculer automatiquement la taille des fenêtres gnuplot à partir
+#    de la résolution de l'écran (xwininfo)
+
+# Valeur par défaut
+# echo "#define GNUPLOT_GEOM 640x450" 
+
+screen_width=`xwininfo -root | grep geometry | (IFS=x$IFS; read a b c; echo $b)`
+if [ $screen_width -lt 1000 ] ; then
+    gnuplot_width=`expr $screen_width \* 8 / 10`
+else
+    gnuplot_width=`expr $screen_width / 2`
+fi
+
+# Pour 1 fenêtre
+gnuplot_height=`expr $gnuplot_width \* 450 / 640`
+echo "#define GNUPLOT_GEOM \"${gnuplot_width}x${gnuplot_height}\"" 
+
+# Pour deux fenêtres
+gnuplot_width=`expr $screen_width / 2`
+# gnuplot_height=`expr $gnuplot_width \* 450 / 640`
+echo "#define GNUPLOT_GEOM1 \"${gnuplot_width}x${gnuplot_height}+0+0\""
+echo "#define GNUPLOT_GEOM2 \"${gnuplot_width}x${gnuplot_height}+${gnuplot_width}+0\""
+

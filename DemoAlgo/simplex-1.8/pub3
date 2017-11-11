@@ -1,0 +1,9 @@
+# Reformulation of the publicity problem with the radio.
+# x1 and x2 are not defined as positive variables.
+
+1800000*x1 + 1000000*x2 + 250000*x3 = z[max]
+20000*x1 + 10000*x2 + 2000*x3 <= 1000000
+7*x1 + 21*x2 + x3 <= 700
+x1 >= 10
+x2 >= 2
+x3 >= 0

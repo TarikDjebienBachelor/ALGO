@@ -1,0 +1,19 @@
+#! /bin/sh
+
+# Essaie de distinguer automatiquement la version 3 de la version 4 de gnuplot
+
+# Teste si gnuplot est accessible et si oui, teste la version.
+# Seuls sont testées les versions 3 et 4.
+# gnuplot --version ne fonctionne qu'à partir de la version 4.
+
+(echo quit | gnuplot 2>/dev/null >/dev/null
+if [ $? -ne 0 ] ; then
+    echo '#define NO_GNUPLOT 1'
+else
+    gnuplot --version 2>/dev/null >/dev/null
+    if [ $? -ne 0 ] ; then
+	echo '#define GNUPLOT_V3 1'
+    else
+	echo '#define GNUPLOT_V4 1'
+    fi
+fi) 2>/dev/null

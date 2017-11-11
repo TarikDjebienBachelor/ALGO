@@ -1,0 +1,7 @@
+# The baker problem
+
+4000*x1 + 5000*x2 = z[max]
+2*x1 + x2 <= 8
+x1 + 2*x2 <= 7
+x2 <= 3
+x1, x2 >= 0

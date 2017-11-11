@@ -1,0 +1,31 @@
+Installation du mode ampl pour emacs
+Pas a pas
+
+    * télécharger le fichier ampl-mode.el
+    * dans votre répertoire maison, créez˜/.extensions_emacs
+    * enregistrez le fichier ampl-mode.el dans ˜/.extensions_emacs
+    * éditez le fichier nommé .emacs (il est dans votre répertoire maison)
+    * ajoutez la ligne suivante
+
+        (load "/home/l3/votrelogin/.extensions_emacs/ampl-mode.el")
+        
+
+    * ajoutez ensuite
+
+      ;; Ampl mode
+      (setq auto-mode-alist
+            (cons '("\\.mod$" . ampl-mode) auto-mode-alist))
+      (setq auto-mode-alist
+            (cons '("\\.dat$" . ampl-mode) auto-mode-alist))
+      (setq auto-mode-alist
+            (cons '("\\.ampl$" . ampl-mode) auto-mode-alist))
+      (setq interpreter-mode-alist
+            (cons '("ampl" . ampl-mode)
+                  interpreter-mode-alist))
+
+      (autoload 'ampl-mode "ampl-mode" "Ampl editing mode." t)
+
+    * enregistrez le fichier .emacs
+    * (re)lancez emacs
+
+

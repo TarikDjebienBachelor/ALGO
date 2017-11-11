@@ -1,0 +1,16 @@
+# Definitions:
+# x1 = number of kilos of bresilian coffee used to produce Super
+# x2 = number of kilos of bresilian coffee used to produce Extra
+#
+# Thus:
+# x1 = number of kilos of colombian coffee used to produce Super
+# 3*x2 = number of kilos of colombian coffee used to produce Extra
+#
+# Thus:
+# 2*x1 = number of produced kilos of Super
+# 4*x2 = number of produced kilos of Extra
+
+2*50*x1 + 4*30*x2 = z[max]
+x1 + x2 <= 120               # stock limit on bresilian coffee
+x1 + 3*x2 <= 180             # stock limit on colombian coffee
+x1, x2 >= 0

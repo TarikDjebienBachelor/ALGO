@@ -1,0 +1,7 @@
+# The example taken in the course to illustrate the two phases method
+
+-x1 - x2 = z[max]
+3*x1 + 4*x2 >= 12
+2*x1 + x2 <= 4
+x1, x2 >= 0
+

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+	<html>
+		<head>
+			<title>page_16</title>
+			<link rel="stylesheet" href="reset.css" type="text/css" media="all">
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		</head>
+		<body>
+		<table summary="top nav" border="0" width="100%">
+			<tr>
+				<td align="left" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_15.html">&lt;&nbsp;previous page</a></td>
+				<td id="ebook_previous" align="center" width="40%" style="background: #EEF3E2"><strong style="color: #2F4F4F; font-size: 120%;">page_16</strong></td>
+				<td align="right" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_17.html">next page&nbsp;&gt;</a></td>
+			</tr>
+		
+			<tr>
+				<td id="ebook_page" align="left" colspan="3" style="background: #ffffff; padding: 20px;">
+    
+
+<table border="0" width="100%" cellpadding="0"><tr><td align="center">
+  <table border="0" cellpadding="2" cellspacing="0" width="100%"><tr><td align="left"></td>
+  <td align="right"></td>
+  </tr></table></td>
+</tr><tr><td align="left">
+
+
+
+<p></p><table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td align="right"><font face="Times New Roman, Times, Serif" size="2" color="#FF0000">Page 16</font></td></tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3"><i>Satisfaction or Finite Domain Programming.</i> While the methods used are mathematically less sophisticated, it has representational advantages which can make problems easier to model and sometimes easier to solve in view of the more concise representation. Therefore we briefly discuss the subject here. It seems likely that <i>hybrid</i> systems will eventually emerge in which the modelling capabilities of CLP are used in modelling languages for systems which use either CLP or IP for solving the models.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">In CLP each <i>variable</i> has a finite domain of possible values. <i>Constraints</i> connect (or restrict) the possible combinations of values which the variables can take. These constraints are of a richer variety than the linear constraints of IP (although these are also included) and are usually expressed in the form of <i>predicates.</i> For example, a very common predicate is <i>all_different.</i> When applied to a set of variables as, for example,</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">all_different (<i>x</i></font><font face="Times New Roman, Times, Serif" size="1"><sub>1</sub></font><font face="Times New Roman, Times, Serif" size="3">, <i>x</i></font><font face="Times New Roman, Times, Serif" size="1"><sub>2</sub></font><font face="Times New Roman, Times, Serif" size="3">, , <i>x</i></font><i><font face="Times New Roman, Times, Serif" size="1"><sub>n</sub></font><font face="Times New Roman, Times, Serif" size="3">)</font></i></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">it means that all these variables must take <i>distinct</i> values. While this condition can be imposed using integer programming, it is more cumbersome. Once one of the variables has been set to one of the values in its domain (either temporarily or permanently), this predicate implies that this value must be taken out of the domain of all the other variables (a process known as <i>constraint propagation).</i> In this way constraint propagation is used progressively to restrict the domains of the variables until a feasible set of values can be found for each variable or it can be shown that none exists.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">CLP is mainly useful where a problem has no objective function or all that is sought is a feasible solution. It lacks the ability to <i>prove</i> optimality (apart from by complete enumeration) in the way which IP does by using the dual values of an LP relaxation.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">There is considerable interest in using predicates such as those found in CLP for modelling in IP or CLP. An early paper is McKinnon and Williams (1989), and Fourer (1998) also discusses this. Comparisons and connections between IP and CLP are discussed by Barth (1995), Bockmayr and Kasper (1998), Brailsford <i>et al.</i> (1996), Proll and Smith (1998), Darby-Dowman and Little (1998), Hooker (1998) and Wilson and Williams (1998). The formulation of the all_different predicate using IP is discussed by Williams and Yan (1999).</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table>
+
+
+
+
+
+
+
+</td>
+</tr></table><p><font size="0"></font></p>
+ 
+
+
+
+
+  </td>
+			</tr>
+	
+			<tr>
+				<td align="left" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_15.html">&lt;&nbsp;previous page</a></td>
+				<td id="ebook_next" align="center" width="40%" style="background: #EEF3E2"><strong style="color: #2F4F4F; font-size: 120%;">page_16</strong></td>
+				<td align="right" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_17.html">next page&nbsp;&gt;</a></td>
+			</tr>
+		</table>
+		</body>
+	</html>

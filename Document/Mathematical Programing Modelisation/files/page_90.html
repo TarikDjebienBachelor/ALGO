@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+	<html>
+		<head>
+			<title>page_90</title>
+			<link rel="stylesheet" href="reset.css" type="text/css" media="all">
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		</head>
+		<body>
+		<table summary="top nav" border="0" width="100%">
+			<tr>
+				<td align="left" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_89.html">&lt;&nbsp;previous page</a></td>
+				<td id="ebook_previous" align="center" width="40%" style="background: #EEF3E2"><strong style="color: #2F4F4F; font-size: 120%;">page_90</strong></td>
+				<td align="right" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_91.html">next page&nbsp;&gt;</a></td>
+			</tr>
+		
+			<tr>
+				<td id="ebook_page" align="left" colspan="3" style="background: #ffffff; padding: 20px;">
+    
+
+<table border="0" width="100%" cellpadding="0"><tr><td align="center">
+  <table border="0" cellpadding="2" cellspacing="0" width="100%"><tr><td align="left"></td>
+  <td align="right"></td>
+  </tr></table></td>
+</tr><tr><td align="left">
+
+
+
+<p></p><table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td align="right"><font face="Times New Roman, Times, Serif" size="2" color="#FF0000">Page 90</font></td></tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">One famous network problem which has not been discussed in this section is the <i>travelling salesman problem.</i> This is the problem of finding a minimum distance (cost) route round a given set of cities. This problem cannot generally be solved by a linear programming model, in spite of its apparent similarity to the assignment problem. It can, however, be modelled as an integer programming extension to the assignment problem and is fully discussed in Section 9.5.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="17"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">5.4 Converting Linear Programs to Networks</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">The advantages of converting linear programs to minimum cost network flow models, if possible, have already been discussed in Section 5.3. They are further discussed in Section 10.1 since minimum cost network flow models have <i>integer</i> optimal solutions (so long as external flows in and out are integer). This relieves the need to use the much more costly procedures of integer programming.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">We outline a method described by Baston, Rahmouni and Williams (1991) for converting linear programs to network flow models. Another procedure, but expressed in the more abstract language of matroid theory, is given by Bixby and Cunningham (1980).</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">In order to illustrate the method we will take a numerical example.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3"><img src="1ed1085f0ac83d2984443b2af491bbf7.gif" border="0" alt="0090-01.gif" width="353" height="142" /></font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">Since the conversion does not depend on the objective or right-hand side coefficients we give these in a general form. In this example we assume all the original constraints were of the <u>&lt;</u> form and that <i>slack</i> variables have been added to make them equations. For <u>&gt;</u> constraints <i>surplus</i> variables would be subtracted. If any of the original constraints were equations then we would add <i>artificial</i> variables (variables constrained to take the value zero). These <i>logical</i> (slack, surplus or artificial) variables will represent arcs in the network created. For the case of artificial variables these arcs will finally be deleted.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">We carry out the following transformations:</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">(i) Scale the rows and columns in order to make the constraint coefficients 0 or ±1 if possible.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">This may not be possible in which case the conversion to a network is not possible. In most practical problems (such as those referenced in Section 5.3) for which it is worth attempting a conversion these coefficients will already be 0 or ±1.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table>
+
+
+
+
+
+
+
+</td>
+</tr></table><p><font size="0"></font></p>
+ 
+
+
+
+
+  </td>
+			</tr>
+	
+			<tr>
+				<td align="left" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_89.html">&lt;&nbsp;previous page</a></td>
+				<td id="ebook_next" align="center" width="40%" style="background: #EEF3E2"><strong style="color: #2F4F4F; font-size: 120%;">page_90</strong></td>
+				<td align="right" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_91.html">next page&nbsp;&gt;</a></td>
+			</tr>
+		</table>
+		</body>
+	</html>

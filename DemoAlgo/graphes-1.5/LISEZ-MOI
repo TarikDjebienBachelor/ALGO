@@ -1,0 +1,193 @@
+DEMO_ALGO : Petit logiciel de démonstration des algorithmes de théorie 
+	des graphes présentés en ALGO et en ROAD. Voir le support de 
+	cours pour les détails.
+
+Les algorithmes sont implantés avec les notations les plus proches du support
+de cours que possible.
+
+Auteur : François Boulier. Mai 2006.
+
+VERSION : 1.5
+-------
+
+COPYRIGHT
+---------
+
+Ce logiciel est protégé par la GNU General Public License.
+En clair, il peut être distribué librement et personne ne peut se l'approprier.
+Voir COPYING pour le texte précis.
+
+ENVIRONNEMENT INDISPENSABLE
+---------------------------
+
+Système UNIX ou LINUX
+Environnement X Window
+Compilateur C : gcc
+Logiciel gnuplot
+
+POUR DÉMARRER RAPIDEMENT
+------------------------
+
+À partir d'une fenêtre de commande (fenêtre shell), entrer dans le répertoire 
+puis taper les commandes suivantes 
+
+make
+
+# Parcours en largeur en d'abord à partir du sommet A sur l'exemple par défaut
+./demo_algo largeur 1 A
+# Taper sur entrée dans la fenêtre de commande pour passer à l'étape suivante
+
+# Même exemple mais avec une deuxième fenêtre gnuplot pour visualiser 
+# l'arbre couvrant construit par le parcours
+./demo_algo largeur 2 A
+
+# Pour changer d'exemple
+make circuit_positif1
+./demo_algo Dijkstra 2 A
+
+LES EXEMPLES DISPONIBLES
+------------------------
+
+Ils sont rangés dans le sous-répertoire EXEMPLES.
+Il y a deux fichiers par exemple.
+
+AJOUTER UN NOUVEL EXEMPLE
+-------------------------
+
+Il suffit de créer deux fichiers (un .c et un .h) dans le répertoire EXEMPLES
+et de rajouter le nom de l'exemple dans le Makefile.
+
+Dans le fichier .h
+    Adapter la valeur de la constante n : le nombre de sommets
+
+Dans le fichier .c
+    Adapter la matrice d'adjacence B (dimensions n x n).
+    Si le graphe est non orienté (Kruskal), faire attention à bien
+	entrer une matrice symétrique.
+    Adapter le tableau S (dimension n) en indiquant les coordonnées de
+	chaque sommet (coordonnées dans l'intervalle [0,20]). Les sommets
+	sont implicitement identifiés par une lettre en commençant à 'A'.
+
+LES ALGORITHMES IMPLANTÉS
+-------------------------
+
+largeur	
+    parcours en largeur d'abord de graphe orienté
+    la file est visualisée
+    la deuxième fenêtre montre l'arbre couvrant construit par le parcours
+    applicable à tout graphe
+
+profondeur
+    parcours en profondeur d'abord de graphe orienté
+    la pile est visualisée
+    la deuxième fenêtre montre l'arbre couvrant construit par le parcours
+    applicable à tout graphe
+
+topologique
+    tri topologique d'un graphe sans circuit
+    le résultat du tri est visualisé en bas de la fenêtre
+    si on l'applique à un graphe avec circuits, au moins un
+	arc « arrière » est détecté et coloré différemment.
+
+niveaux
+    calcul du niveau de chaque sommet vis-à-vis d'un sommet donné
+    l'algorithme est implanté avec une file, qui est visualisée
+    chaque sommet est annoté avec son compteur et son niveau
+    la deuxième fenêtre montre l'arbre couvrant construit par le parcours
+    applicable aux graphes acycliques (ex. acyclique1)
+
+Dijkstra
+    chemin de valeur minimale d'un sommet donné à tous les autres sommets
+    la file avec priorité est implantée au moyen d'un tas, qui est visualisé
+    la deuxième fenêtre montre l'arbre couvrant construit par le parcours
+    chaque arc est annoté avec sa valeur
+    applicable aux graphes valués positvement (ex. circuit_positif1)
+
+EdmondsKarp
+    flot maximal dans un réseau de transport entre une source et une 
+	destination données
+    variante de Ford-Fulkerson où les chaînes améliorantes sont calculées
+	par un parcours en largeur d'abord
+    la chaîne améliorante est visualisée à chaque étape
+    à la fin de l'algorithme, la coupe de capacité égale au flot calculée
+	par l'algorithme est visualisée
+    chaque arc est annoté par un couple flux/capacité
+    pas de deuxième fenêtre
+    applicable aux réseaux de transport (ex. reseau_transport1, 
+	reseau_transport2)
+
+Kruskal
+    arbre couvrant de valeur minimale
+    l'arbre en cours de construction est visualisé à chaque étape
+    le test d'appartenance à la même classe d'équivalence est implanté
+	au moyen d'une relation d'équivalence (ou ensembles disjoints),
+	qui est visualisée dans la deuxième fenêtre. La première optimisation
+	est implantée (les compteurs c sont affichés) mais pas la deuxième 
+	(compression des chemins).
+    chaque arête est annotée par sa valeur.
+    applicable aux graphes non orientés (ex. non_oriente1)
+
+POUR NETTOYER LE RÉPERTOIRE
+---------------------------
+
+make clean
+
+REMARQUES SUR L'IMPLANTATION
+----------------------------
+
+Langage C.
+Implantation aussi minimale que possible.
+Les structures de données (file, pile, tas, ...) sont dimensionnés en
+    fonction de la taille du graphe et sont recompilés pour chaque exemple.
+Pas de mécanisme autoconf/automake pour alléger.
+Communication avec gnuplot par pipelines.
+
+Essaie de distinguer automatiquement la version 3 de la version 4 de gnuplot
+Essaie de calculer automatiquement la taille des fenêtres gnuplot à partir
+    de la résolution de l'écran (xwininfo)
+
+file.[ch], pile.[ch], tas.[ch], relation_eqv.[ch]
+    implantation minimale des structures de données correspondantes
+
+tableau_arcs.[ch]
+    implantation minimale d'un tableau d'arcs.
+    utilisé par EdmondsKarp (chaîne améliorante), Kruskal (arbre) et
+    par le tri topologique (arcs arrière).
+
+tableau_sommets.[ch]
+    implantation minimale d'un tableau de sommets.
+    utilisé par le tri topologique (tableau trié des sommets).
+
+def_graphe.h
+    définition de base pour les sommets
+
+un_graphe.[ch]
+    le graphe considéré (écrasé par le Makefile à chaque exemple)
+
+gnuplot_version.h, gnuplot_geometry.h
+    construits par le Makefile
+
+gnuplot.[ch]
+    gestion des affichages (commandes envoyées à gnuplot)
+
+algos_graphe.[ch]
+    les algos implantés
+
+main.c
+    le point d'entrée
+
+A FAIRE
+-------
+
+Écrire un parseur pour ne plus avoir à tout recompiler à chaque exemple ?
+Arrondir certaines flèches.
+
+BUGS
+----
+
+Version 1.0 : 
+    Dans l'algo de Dijkstra, il pouvait arriver qu'un sommet déjà présent
+dans le tas fût inséré une deuxième fois. Corrigé.
+
+Envoyer un courrier à boulier@lifl.fr
+

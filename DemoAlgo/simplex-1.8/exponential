@@ -1,0 +1,12 @@
+# A particular case (n = 4) of a generic linear program with n variables
+# and n constraints, which leads the simplex to 2**n (here 2**4 = 16) loops.
+#
+# This example shows that the algorithm has a worst case complexity
+# which is exponential in the number of variables and of constraints.
+
+8*x1 + 4*x2 + 2*x3 + x4 = z[max]
+x1 <= 5
+4*x1 + x2 <= 25
+8*x1 + 4*x2 + x3 <= 125
+16*x1 + 8*x2 + 4*x3 + x4 <= 625
+x1, x2, x3, x4 >= 0

@@ -1,0 +1,6 @@
+# A multiple intersection
+x1 - x2 = z[max]
+x1 - 2*x2 <= 2
+2*x1 - x2 <= 4
+x1 + x2 <= 5
+x1, x2 >= 0

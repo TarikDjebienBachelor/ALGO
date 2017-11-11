@@ -1,0 +1,7 @@
+# After the phase I an artificial variable remains in the basis
+
+2*x1 +3*x2 = z[max]
+x1 + x2 <= 3
+-x1 - x2 <= -3
+x1 + 4*x2 <= 7
+x1, x2 >= 0

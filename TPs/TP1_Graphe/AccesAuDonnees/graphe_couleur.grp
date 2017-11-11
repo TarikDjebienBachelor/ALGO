@@ -1,0 +1,12 @@
+# type
+type = oriente;
+
+# la liste des sommets
+sommets = bleu vert jaune rouge;
+
+# la liste des arcs
+arcs = 
+	bleu jaune 1.5
+	jaune rouge 2.2
+	jaune vert 5.5
+;

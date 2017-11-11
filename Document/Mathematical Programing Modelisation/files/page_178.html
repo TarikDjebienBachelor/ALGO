@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+	<html>
+		<head>
+			<title>page_178</title>
+			<link rel="stylesheet" href="reset.css" type="text/css" media="all">
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		</head>
+		<body>
+		<table summary="top nav" border="0" width="100%">
+			<tr>
+				<td align="left" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_177.html">&lt;&nbsp;previous page</a></td>
+				<td id="ebook_previous" align="center" width="40%" style="background: #EEF3E2"><strong style="color: #2F4F4F; font-size: 120%;">page_178</strong></td>
+				<td align="right" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_179.html">next page&nbsp;&gt;</a></td>
+			</tr>
+		
+			<tr>
+				<td id="ebook_page" align="left" colspan="3" style="background: #ffffff; padding: 20px;">
+    
+
+<table border="0" width="100%" cellpadding="0"><tr><td align="center">
+  <table border="0" cellpadding="2" cellspacing="0" width="100%"><tr><td align="left"></td>
+  <td align="right"></td>
+  </tr></table></td>
+</tr><tr><td align="left">
+
+
+
+<p></p><table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td align="right"><font face="Times New Roman, Times, Serif" size="2" color="#FF0000">Page 178</font></td></tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">The problem is to pack as many of the members of <img src="9dacbefb24e157805db07b1faa54001c.gif" border="0" alt="l.gif" width="26" height="21" /> into <i>S</i> as possible to maximize total value but for there to be no overlap.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">For example, suppose <i>S</i> = (1, 2, 3, 4, 5, 6) and <img src="9dacbefb24e157805db07b1faa54001c.gif" border="0" alt="l.gif" width="26" height="21" /> = ((1, 2, 5), (1, 3), (2, 4), (3, 6), (2, 3, 6)). A pack for <i>S</i> would be (1, 2, 5) and (3, 6).</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">Again we could build a 01 PIP model to help solve the problem. The variables </font><font face="Symbol" size="3"><i>d</i></font><i><font face="Times New Roman, Times, Serif" size="1"><sub>i</sub></font></i><font face="Times New Roman, Times, Serif" size="1"><sub></sub></font><font face="Times New Roman, Times, Serif" size="3"> have the following interpretation:</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3"><img src="9bb7c38f34816736dd02db0a3d5b2741.gif" border="0" alt="0178-01.gif" width="283" height="39" /></font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">Constraints are introduced to ensure that no member of <i>S</i> is included in more than one member of <img src="9dacbefb24e157805db07b1faa54001c.gif" border="0" alt="l.gif" width="26" height="21" /> in the pack, i.e. there shall be no overlap. For example, in order that the member 2 shall not be included more than once we cannot have more than one of (1, 2, 5), (2, 4), and (2, 3, 6) in the pack. This condition gives rise to the constraint (7) below. The other constraints ensure similar conditions for the other members of <i>S.</i></font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">The objective here is to maximize the number of members of <i>S</i> we can pack in. For this example the model is:</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3"><img src="8e6231b30441e619b95a19c67afd6d3b.gif" border="0" alt="0178-02.gif" width="427" height="171" /></font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">(Constraints (9) and (10) are obviously redundant.)</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">Like the set covering problem this model has a number of important properties:</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td height="12"></td></tr><tr><td>
+<table cellspacing="0" width="538" cellpadding="7"><tr><td valign="top"><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3"><i>Property 4</i></font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table></td><td valign="top"><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">The problem is a maximization and all constraints are <u>&lt;</u>.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table></td></tr><tr><td valign="top"><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3"><i>Property 5</i></font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table></td><td valign="top"><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">All RHS coefficients are 1.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table></td></tr><tr><td valign="top"><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3"><i>Property 6</i></font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table></td><td valign="top"><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">All other matrix coefficients are 0 or 1.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table></td></tr></table></td></tr></table><br /><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">An interesting observation is that the LP problem associated with a set packing problem with objective coefficients of 1 is the dual of the LP problem associated with a set covering problem with objective coefficients of 1. This result is of little obvious significance as far as the optimal solutions to the IP problems are concerned since there may be a duality gap between these solutions. This term is explained in Section 10.3. Although a set packing problem with objective coefficients of 1 is the dual of a set covering problem with objective coefficients of 1 in this sense it should be realized that the set <i>S</i> which we wish to cover with members of <img src="9dacbefb24e157805db07b1faa54001c.gif" border="0" alt="l.gif" width="26" height="21" /> is not the same as the set <i>S</i> which we wish to pack with members of another class of subsets <img src="9dacbefb24e157805db07b1faa54001c.gif" border="0" alt="l.gif" width="26" height="21" />. The two</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table>
+
+
+
+
+
+
+
+</td>
+</tr></table><p><font size="0"></font></p>
+ 
+
+
+
+
+  </td>
+			</tr>
+	
+			<tr>
+				<td align="left" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_177.html">&lt;&nbsp;previous page</a></td>
+				<td id="ebook_next" align="center" width="40%" style="background: #EEF3E2"><strong style="color: #2F4F4F; font-size: 120%;">page_178</strong></td>
+				<td align="right" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_179.html">next page&nbsp;&gt;</a></td>
+			</tr>
+		</table>
+		</body>
+	</html>

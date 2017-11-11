@@ -1,0 +1,13 @@
+# The paper production problem
+# Two factories produce three different kinds of paper
+# There is a cost/day for each factory
+# There is a production requirement
+# For each factory and each kind of paper, there is a production speed.
+# The variables represent the numbers of days factories need to work
+
+1000*x1 + 2000*x2 + 10 = z[min]
+8*x1 + 2*x2 >= 16
+x1 + x2 >= 5
+2*x1 + 7*x2 >= 20
+x1, x2 >= 0
+

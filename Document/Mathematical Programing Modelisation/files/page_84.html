@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+	<html>
+		<head>
+			<title>page_84</title>
+			<link rel="stylesheet" href="reset.css" type="text/css" media="all">
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		</head>
+		<body>
+		<table summary="top nav" border="0" width="100%">
+			<tr>
+				<td align="left" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_83.html">&lt;&nbsp;previous page</a></td>
+				<td id="ebook_previous" align="center" width="40%" style="background: #EEF3E2"><strong style="color: #2F4F4F; font-size: 120%;">page_84</strong></td>
+				<td align="right" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_85.html">next page&nbsp;&gt;</a></td>
+			</tr>
+		
+			<tr>
+				<td id="ebook_page" align="left" colspan="3" style="background: #ffffff; padding: 20px;">
+    
+
+<table border="0" width="100%" cellpadding="0"><tr><td align="center">
+  <table border="0" cellpadding="2" cellspacing="0" width="100%"><tr><td align="left"></td>
+  <td align="right"></td>
+  </tr></table></td>
+</tr><tr><td align="left">
+
+
+
+<p></p><table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td align="right"><font face="Times New Roman, Times, Serif" size="2" color="#FF0000">Page 84</font></td></tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">then this can no longer be guaranteed from a linear programming solution. It is necessary to use integer programming methods. Nevertheless it is possible to exploit this simple structure to good effect in the algorithms used. Glover <i>et al.</i> (1978) describe such a method. In fact any 1 integer programming problem can be converted into such a generalized network model where flows must be integer. This is shown by Glover and Mulvey (1980).</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3"><i>The Shortest Path Problem</i></font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">This is the problem of finding a shortest path between two nodes through a network. Rather surprisingly this problem can be regarded as a special case of the minimum cost flow problem.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">Example 4. Finding the Shortest Path Through a Network</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">In the network in Figure 5.6 we wish to find the shortest path between node 0 and node 8. The lengths of each arc are marked.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">We can reduce this problem to one of finding a minimum cost flow through the network by giving node 0 an availability of 1 unit (a source) and giving node 8 a requirement of 1 unit (a sink). Because of the property that minimum cost flow (as with transportation, transhipment and assignment) problems have of guaranteeing integral optimal flows, when solved as linear programming models, we can be sure that this minimal cost flow through each arc in Figure 5.6 will be 0 or 1. Exactly one of the arcs out of node 0 will therefore have a flow of 1 and exactly one of the flows into node 8 will have a flow of 1. Similarly intermediate nodes on the flow path will have exactly one arc with flow in and one with flow out. The cost of the optimal flow path will give the shortest route between 0 and 8.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">Although it is possible to use conventional linear programming to solve shortest path problems it would be more efficient to use a specialized algorithm. One of the most efficient such algorithms is due to Dijkstra (1959).</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td align="center"><font face="Times New Roman, Times, Serif" size="3"><img src="65c2405cb0a68042285875119b2cb5f8.gif" border="0" alt="0084-01.gif" width="333" height="163" /></font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td align="center"><font face="Times New Roman, Times, Serif" size="2">Figure 5.6</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table>
+
+
+
+
+
+
+
+</td>
+</tr></table><p><font size="0"></font></p>
+ 
+
+
+
+
+  </td>
+			</tr>
+	
+			<tr>
+				<td align="left" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_83.html">&lt;&nbsp;previous page</a></td>
+				<td id="ebook_next" align="center" width="40%" style="background: #EEF3E2"><strong style="color: #2F4F4F; font-size: 120%;">page_84</strong></td>
+				<td align="right" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_85.html">next page&nbsp;&gt;</a></td>
+			</tr>
+		</table>
+		</body>
+	</html>

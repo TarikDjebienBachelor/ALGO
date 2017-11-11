@@ -1,0 +1,11 @@
+# The publicity problem with the radio.
+# Its formulation is a bit strange. The goal is to get it under
+# canonical form so that the current version of the software 
+# may solve its dual.
+
+1800000*x1 + 1000000*x2 + 250000*x3 = z[max]
+20000*x1 + 10000*x2 + 2000*x3 <= 1000000
+7*x1 + 21*x2 + x3 <= 700
+-x1 <= -10
+-x2 <= -2
+x1, x2, x3 >= 0

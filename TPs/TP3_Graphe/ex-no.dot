@@ -1,0 +1,12 @@
+graph{
+A [color=green];
+B [color=green];
+C [color=blue];
+D [color=green];
+E [color=blue];
+A -- B
+ [color=blue]B -- C
+ [color=black]C -- D
+ [color=black]A -- D
+ [color=black]A -- E
+ [color=black]}

@@ -1,0 +1,6 @@
+# The dual program of the baker
+
+8*y1 + 7*y2 + 3*y3 = w[min]
+2*y1 + y2 >= 4000
+y1 + 2*y2 + y3 >= 5000
+y1, y2, y3 >= 0

@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+	<html>
+		<head>
+			<title>page_140</title>
+			<link rel="stylesheet" href="reset.css" type="text/css" media="all">
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		</head>
+		<body>
+		<table summary="top nav" border="0" width="100%">
+			<tr>
+				<td align="left" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_139.html">&lt;&nbsp;previous page</a></td>
+				<td id="ebook_previous" align="center" width="40%" style="background: #EEF3E2"><strong style="color: #2F4F4F; font-size: 120%;">page_140</strong></td>
+				<td align="right" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_141.html">next page&nbsp;&gt;</a></td>
+			</tr>
+		
+			<tr>
+				<td id="ebook_page" align="left" colspan="3" style="background: #ffffff; padding: 20px;">
+    
+
+<table border="0" width="100%" cellpadding="0"><tr><td align="center">
+  <table border="0" cellpadding="2" cellspacing="0" width="100%"><tr><td align="left"></td>
+  <td align="right"></td>
+  </tr></table></td>
+</tr><tr><td align="left">
+
+
+
+<p></p><table border="0" cellspacing="0" cellpadding="0" width="100%"><tr><td align="right"><font face="Times New Roman, Times, Serif" size="2" color="#FF0000">Page 140</font></td></tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">optimality. Suppose, for example, that we were to obtain the set of values </font><font face="Symbol" size="3">l</font><font face="Times New Roman, Times, Serif" size="1"><sub>2</sub></font><font face="Times New Roman, Times, Serif" size="3"> = 0.4, </font><font face="Symbol" size="3">l</font><font face="Times New Roman, Times, Serif" size="1"><sub>3</sub></font><font face="Times New Roman, Times, Serif" size="3"> = 0.5, and </font><font face="Symbol" size="3">l</font><font face="Times New Roman, Times, Serif" size="1"><sub>4</sub></font><font face="Times New Roman, Times, Serif" size="3"> = 0.1. This would give <i>x</i></font><font face="Times New Roman, Times, Serif" size="1"><sub>1</sub></font><font face="Times New Roman, Times, Serif" size="3"> = 0.85 and <i>y</i> = 1.3375. The point with these coordinates lies above the piecewise line in Figure 7.15. As our objective function, to be minimized, is dominated by the term <img src="ac6303927c64a9698cae64f72ea1d903.gif" border="0" alt="c0140-01.gif" width="22" height="19" />, our optimization will tend to maximize <i>y.</i> This will tend to take us away from the piecewise line rather than down on to it. In this (non-convex) case it is therefore necessary to use an algorithm which does not allow more than two adjacent </font><font face="Symbol" size="3">l</font><font face="Times New Roman, Times, Serif" size="1"><sub><i>i</i></sub></font><font face="Times New Roman, Times, Serif" size="3"> to be non-zero.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">The <i>separable programming</i> extension of the simplex algorithm due to Miller (1963) never allows more than two adjacent </font><font face="Symbol" size="3">l</font><font face="Times New Roman, Times, Serif" size="1"><sub><i>i</i></sub></font><font face="Times New Roman, Times, Serif" size="3"> into the solution. As a result it restricts corresponding values of <i>x</i></font><i><font face="Times New Roman, Times, Serif" size="1"><sub>i</sub></font></i><font face="Times New Roman, Times, Serif" size="1"><sub></sub></font><font face="Times New Roman, Times, Serif" size="3"> and <i>y</i> to the coordinates of points lying on the desired piecewise straight line.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">Unfortunately with non-convex problems, such as Example 2 of Section 7.2, which was modelled above, restricting the values of </font><font face="Symbol" size="3">l</font><font face="Times New Roman, Times, Serif" size="1"><sub><i>i</i></sub></font><font face="Times New Roman, Times, Serif" size="3"> to at most two adjacent ones being non-zero does not guarantee any more than a local optimum. We could easily end up at points A or B on Figure 7.11 rather than C.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">In both our examples the non-linear functions of a single variable appeared in the objective function. Should such non-linear functions also appear in the constraints the analysis is just the same. They are replaced by linear terms and a piecewise linear approximation made to the non-linear function. Variables </font><font face="Symbol" size="3">l</font><font face="Times New Roman, Times, Serif" size="1"><sub><i>i</i></sub></font><font face="Times New Roman, Times, Serif" size="3"> are then introduced in order to relate the new term to the old.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">It may not always be easy to decide whether a problem is convex or not. For known convex problems (such as, for example, problems which are linear apart from diseconomies of scale) consisting only of separable functions, piecewise linear approximations are all that are needed. It is not necessary here to use the separable programming algorithm. For problems which are non-convex (such as, for example, problems with economies of scale) or where it is not known whether or not they are convex, linear programming is not sufficient. Separable programming can be used but no more than a local optimum can be guaranteed. It is often possible to solve such a model a number of times using different strategies to obtain different local optima. The best of these may then have some chance of being a global optimum. Such computational considerations are, however, beyond the scope of this book, but are sometimes described in manuals associated with particular packages. The only really satisfactory way of being sure of avoiding local optima when a problem is not known to be convex is to resort to integer programming which is generally much more costly in computer time. This is discussed in Sections 9.2 and 9.3.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table><table border="0" cellspacing="0" cellpadding="0"><tr><td rowspan="5"></td>
+  <td colspan="3" height="12"></td>
+  <td rowspan="5"></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td></td>
+  <td><font face="Times New Roman, Times, Serif" size="3">Before finishing this section an alternative way of modelling a piecewise linear approximation to a separable function will be described. The formulation method just described is usually known as the </font><font face="Symbol" size="3">l</font><font face="Times New Roman, Times, Serif" size="3">-<i>form</i> for separable programming where variables </font><font face="Symbol" size="3">l</font><font face="Times New Roman, Times, Serif" size="1"><sub>i</sub></font><font face="Times New Roman, Times, Serif" size="3"> are interpreted as weights attached to the vertices in the piecewise straight line. There is an alternative formulation known as the </font><font face="Symbol" size="3"><i>d</i></font><i><font face="Times New Roman, Times, Serif" size="3">-form.</font></i><font face="Times New Roman, Times, Serif" size="3"> In order to demonstrate the </font><font face="Symbol" size="3">d</font><font face="Times New Roman, Times, Serif" size="3">-form we will reconsider the piecewise linear approximation to the function <i>y</i> = <img src="d3b7c73693751953b5a4dff4b802e075.gif" border="0" alt="c0140-02.gif" width="41" height="19" /> shown in Figure 7.4. This approximation is redrawn in Figure 7.16.</font></td>
+<td></td>
+</tr><tr><td colspan="3"></td>
+</tr><tr><td colspan="3" height="1"></td>
+</tr></table>
+
+
+
+
+
+
+
+</td>
+</tr></table><p><font size="0"></font></p>
+ 
+
+
+
+
+  </td>
+			</tr>
+	
+			<tr>
+				<td align="left" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_139.html">&lt;&nbsp;previous page</a></td>
+				<td id="ebook_next" align="center" width="40%" style="background: #EEF3E2"><strong style="color: #2F4F4F; font-size: 120%;">page_140</strong></td>
+				<td align="right" width="30%" style="background: #EEF3E2"><a style="color: blue; font-size: 120%; font-weight: bold; text-decoration: none; font-family: verdana;" href="page_141.html">next page&nbsp;&gt;</a></td>
+			</tr>
+		</table>
+		</body>
+	</html>
